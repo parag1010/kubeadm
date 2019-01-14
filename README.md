@@ -4,7 +4,6 @@ Build a Kubernetes cluster using Ansible with kubeadm. The goal is easily instal
 
   - Ubuntu 16.04
   - CentOS 7
-  - Debian 9
 
 System requirements:
 
@@ -16,10 +15,10 @@ System requirements:
 Add the system information gathered above into a file called `hosts.ini`. For example:
 ```
 [master]
-192.16.35.12
+127.0.0.1
 
 [node]
-192.16.35.[10:11]
+127.0.0.1
 
 [kube-cluster:children]
 master
